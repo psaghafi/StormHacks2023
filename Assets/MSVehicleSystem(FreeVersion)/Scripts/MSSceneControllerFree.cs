@@ -182,25 +182,27 @@ public class MSSceneControllerFree : MonoBehaviour {
 			buttonDown = transform.Find ("Canvas/MSButtonDown").GetComponent<MSButtonFree> ();
 			joystickCamera = transform.Find ("Canvas/MSJoystickCamera").GetComponent<JoystickFree> ();
 
-			nextVehicle = transform.Find ("Canvas/nextVehicle").GetComponent<Button> ();
-			previousVehicle = transform.Find ("Canvas/previousVehicle").GetComponent<Button> ();
-			gearText = transform.Find ("Canvas/Strings/gearText").GetComponent<Text> ();
-			kmhText = transform.Find ("Canvas/Strings/kmhText").GetComponent<Text> ();
-			mphText = transform.Find ("Canvas/Strings/mphText").GetComponent<Text> ();
-			handBrakeText = transform.Find ("Canvas/Strings/handBrakeText").GetComponent<Text> ();
-			pauseText = transform.Find ("Canvas/Strings/pauseText").GetComponent<Text> ();
-			backGround = transform.Find ("Canvas/Strings").GetComponent<Image> ();
+		//	nextVehicle = transform.Find ("Canvas/nextVehicle").GetComponent<Button> ();
+		//	previousVehicle = transform.Find ("Canvas/previousVehicle").GetComponent<Button> ();
+		//	gearText = transform.Find ("Canvas/Strings/gearText").GetComponent<Text> ();
+		//	kmhText = transform.Find ("Canvas/Strings/kmhText").GetComponent<Text> ();
+		//	mphText = transform.Find ("Canvas/Strings/mphText").GetComponent<Text> ();
+		//	handBrakeText = transform.Find ("Canvas/Strings/handBrakeText").GetComponent<Text> ();
+		//	pauseText = transform.Find ("Canvas/Strings/pauseText").GetComponent<Text> ();
+			//backGround = transform.Find ("Canvas/Strings").GetComponent<Image> ();
 			//end transform.find
-
+			/*
 			if (nextVehicle) {
 				nextVehicle.onClick = new Button.ButtonClickedEvent ();
 				nextVehicle.onClick.AddListener (() => NextVehicle ());
 			}
+
+			
 			if (previousVehicle) {
 				previousVehicle.onClick = new Button.ButtonClickedEvent ();
 				previousVehicle.onClick.AddListener (() => PreviousVehicle ());
 			}
-
+			*/
 			if (cameraMobileButton) {
 				cameraMobileButton.onClick = new Button.ButtonClickedEvent ();
 				cameraMobileButton.onClick.AddListener (() => Mobile_CameraInput ());
@@ -415,17 +417,18 @@ public class MSSceneControllerFree : MonoBehaviour {
 						clampGear = 1;
 					}
 
-					gearText.text = "Gear: " + vehicleCode.currentGear;
-					kmhText.text = "Velocity(km/h): " + (int)(vehicleCode.KMh * clampGear);
-					mphText.text = "Velocity(mp/h): " + (int)(vehicleCode.KMh * 0.621371f * clampGear);
-					handBrakeText.text = "HandBreak: " + vehicleCode.handBrakeTrue;
-					pauseText.text = "Pause: " + pause;
+				//	gearText.text = "Gear: " + vehicleCode.currentGear;
+				//	kmhText.text = "Velocity(km/h): " + (int)(vehicleCode.KMh * clampGear);
+				//	mphText.text = "Velocity(mp/h): " + (int)(vehicleCode.KMh * 0.621371f * clampGear);
+				//	handBrakeText.text = "HandBreak: " + vehicleCode.handBrakeTrue;
+				//	pauseText.text = "Pause: " + pause;
 				}
 			}
 		}
 	}
 
 	void EnableUI(bool enable){
+		/*
 		if (nextVehicle.gameObject.activeSelf != enable) {
 			nextVehicle.gameObject.SetActive(enable);
 			previousVehicle.gameObject.SetActive (enable);
@@ -436,6 +439,7 @@ public class MSSceneControllerFree : MonoBehaviour {
 			pauseText.gameObject.SetActive (enable);
 			backGround.gameObject.SetActive (enable);
 		}
+		*/
 	}
 
 	public void PreviousVehicle(){
