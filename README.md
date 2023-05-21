@@ -6,7 +6,7 @@ or scan the QR code in Devpost.
 
 # Short introduction:
 
-We present to you Forested Exploration. Our app is designed to revolutionize the way we learn by combining interactive 3D world with augmented reality. In this game world, you play as a ranger and you drive around and discover all of the dinosaurs in this forest you have navigated into. 
+We present to you Forested Dino Exploration. Our app is designed to revolutionize the way we learn by combining interactive 3D world with augmented reality. In this game world, you play as a ranger and you drive around and discover all of the dinosaurs in this forest you have navigated into. 
 For each dinosaur you encounter, you can view it in augmented reality and interact with it as it were in the real world with your smart device.
 
 How this app differs from other education apps is that while some education apps mostly provide an interface to view dinosaurs and to learn about them similar to a pictorial dictionary, or by providing them with gasified procured lessons, this app is designed to engage users from the very start. Users are jumped straight into the game world and are tasked to seek
